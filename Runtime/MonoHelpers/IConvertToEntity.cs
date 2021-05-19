@@ -1,7 +1,7 @@
 using System.Collections;
 using Leopotam.EcsLite;
 
-namespace Voody.UniLeo.Light
+namespace Voody.UniLeo.Lite
 {
     public interface IConvertToEntity
     {

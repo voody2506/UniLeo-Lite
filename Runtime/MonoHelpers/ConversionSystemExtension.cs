@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Leopotam.EcsLite;
 using UnityEngine;
 
-namespace Voody.UniLeo.Light
+namespace Voody.UniLeo.Lite
 {
     public static class ConversionSystemExtension
     {

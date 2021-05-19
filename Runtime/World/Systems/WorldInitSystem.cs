@@ -4,7 +4,7 @@ using Leopotam.EcsLite;
 using Unity.Mathematics;
 using UnityEngine;
 
-namespace Voody.UniLeo.Light
+namespace Voody.UniLeo.Lite
 {
     /// This class handle global init to ECS World
 
