@@ -1,7 +1,7 @@
 {
-    "name": "com.voody.unileo.light",
-    "displayName": "UniLeo-Light",
-    "description": "Unity Conversion Workflow for Leopotam ECS Light. Easy convert GameObjects to Entity.",
+    "name": "com.voody.unileo.lite",
+    "displayName": "UniLeo-Lite",
+    "description": "Unity Conversion Workflow for Leopotam ECS Lite. Easy convert GameObjects to Entity.",
     "unity": "2019.1",
     "version": "1.0.0",
     "keywords": [
@@ -10,12 +10,12 @@
         "performance",
         "voody2506",
         "UniLeo",
-        "UniLeo Light"
+        "UniLeo Lite"
     ],
     "dependencies": {},
     "repository": {
         "type": "git",
-        "url": "https://github.com/voody2506/UniLeo-Light.git"
+        "url": "https://github.com/voody2506/UniLeo-Lite.git"
     },
     "author": {
       "name": "Voody2506",
