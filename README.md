@@ -1,14 +1,14 @@
-# UniLeo - Unity Conversion Workflow for [Leopotam ECS Light](https://github.com/Leopotam/ecslite)
+# UniLeo - Unity Conversion Workflow for [Leopotam ECS Lite](https://github.com/Leopotam/ecslite)
 ## Easy convert GameObjects to Entity
 
-Important! This repository is extension to [Leopotam ECS Light](https://github.com/Leopotam/ecslite) - Engine independent ECS that works with any Game Engine. But Unity Engineers often ask how to integrate Leo with Unity Inspector and deal with Prefabs.
+Important! This repository is extension to [Leopotam ECS Lite](https://github.com/Leopotam/ecslite) - Engine independent ECS that works with any Game Engine. But Unity Engineers often ask how to integrate Leo with Unity Inspector and deal with Prefabs.
 This lightweight repository is intended to help with this.
 
 Thanks to [SinyavtsevIlya](https://github.com/SinyavtsevIlya) and [Leopotam](https://github.com/Leopotam/ecslite)
 
 # How to start
 
-**First** you need to install [Leopotam ECS Light](https://github.com/Leopotam/ecslite), you can do it with Unity Package Manager
+**First** you need to install [Leopotam ECS Lite](https://github.com/Leopotam/ecslite), you can do it with Unity Package Manager
 
 Add new line to `Packages/manifest.json`
 ```
@@ -17,13 +17,13 @@ Add new line to `Packages/manifest.json`
 **Second** install this repository
 
 ```
-"com.voody.unileo.light": "https://github.com/voody2506/UniLeo-Light.git",
+"com.voody.unileo.lite": "https://github.com/voody2506/UniLeo-Lite.git",
 ```
 
 ## Don't forget NameSpace 
 
 ```csharp
-using Voody.UniLeo.Light;
+using Voody.UniLeo.Lite;
 ```
 
 ## Create your first component
