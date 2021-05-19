@@ -20,14 +20,6 @@ Add new line to `Packages/manifest.json`
 "com.voody.unileo.light": "https://github.com/voody2506/UniLeo-Light.git",
 ```
 
-<details>
-  <summary>How to add through Package Manager</summary>
-Unity Editor -> Window -> Package Manager
-	
-	
-![](https://i.ibb.co/4gHj69R/2021-04-20-00-23-10.png)
-</details>
-
 ## Don't forget NameSpace 
 
 ```csharp
