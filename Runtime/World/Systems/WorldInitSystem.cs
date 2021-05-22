@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using Leopotam.EcsLite;
-using Unity.Mathematics;
 using UnityEngine;
 
 namespace Voody.UniLeo.Lite
