@@ -1,7 +1,6 @@
 using UnityEngine;
 using Leopotam.EcsLite;
 using System.Collections.Generic;
-using ExitGames.Client.Photon.StructWrapping;
 
 namespace Voody.UniLeo.Lite
 {
