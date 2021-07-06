@@ -100,5 +100,18 @@ PhotonNetwork.Instantiate <- works in 3rd party Assets
 
  > Every Prefab initialize with new entity. Components will be added automatically
 
+## Working with [Leo's Unity Editor Extension](https://github.com/Leopotam/ecslite-unityeditor)
+
+Please, add ConvertScene method after UnityEditor extension
+
+```csharp
+#if UNITY_EDITOR
+        // add debug systems for custom worlds here, for example:
+        // .Add (new Leopotam.EcsLite.UnityEditor.EcsWorldDebugSystem ("events"))
+        .Add (new Leopotam.EcsLite.UnityEditor.EcsWorldDebugSystem ())
+#endif
+        .ConvertScene() // <- Need to add this method
+
+```
 
 ## Thanks!
