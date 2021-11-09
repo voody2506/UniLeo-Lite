@@ -9,14 +9,17 @@ namespace Voody.UniLeo.Lite
     public enum ConvertMode
     {
         ConvertAndInject,
-        ConvertAndDestroy
+        ConvertAndDestroy,
+        ConvertAndSave
     }
 
     public class ConvertToEntity : MonoBehaviour
     {
         [SerializeField] private ConvertMode convertMode; // Conversion Mode of ECS
         [SerializeField] private String customWorld; // World Type of ECS
-
+        private EcsPackedEntity packedEntity;
+        private EcsWorld spawnWorld;
+        
         private void Start()
         {
             var world = WorldHandler.GetMainWorld(); // Getting Main World from ECS
@@ -38,6 +41,25 @@ namespace Voody.UniLeo.Lite
         public ConvertMode GetConvertMode()
         {
             return convertMode;
+        }
+        
+        public int? TryGetEntity()
+        {
+            if (spawnWorld != null)
+            {
+                int entity;
+                if (packedEntity.Unpack(spawnWorld, out entity))
+                {
+                    return entity;
+                }
+            }
+            return null;
+        }
+
+        public void Set(int entity, EcsWorld world)
+        {
+            spawnWorld = world;
+            packedEntity = EcsEntityExtensions.PackEntity(world, entity);
         }
     }
 }

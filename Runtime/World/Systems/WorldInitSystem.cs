@@ -82,6 +82,9 @@ namespace Voody.UniLeo.Lite
                     case ConvertMode.ConvertAndInject:
                         GameObject.Destroy(convertComponent);
                         break;
+                    case ConvertMode.ConvertAndSave:
+                        convertComponent.Set(entity, spawnWorld);
+                        break;
                 }
             }
         }
