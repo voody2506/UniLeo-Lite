@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Leopotam.EcsLite;
 
-namespace Voody.UniLeo.Light
+namespace Voody.UniLeo.Lite
 {
     public struct InstantiateComponent
     {

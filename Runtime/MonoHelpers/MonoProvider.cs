@@ -1,14 +1,13 @@
 using UnityEngine;
 using Leopotam.EcsLite;
 using System.Collections.Generic;
-using ExitGames.Client.Photon.StructWrapping;
 
-namespace Voody.UniLeo.Light
+namespace Voody.UniLeo.Lite
 {
     public abstract class MonoProvider<T> : BaseMonoProvider, IConvertToEntity where T : struct
     {
 
-        [SerializeField] private T value;
+        [SerializeField] protected T value;
 
         void IConvertToEntity.Convert(int entity, EcsWorld world)
         {

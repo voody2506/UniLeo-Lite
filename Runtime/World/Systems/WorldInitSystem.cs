@@ -1,10 +1,9 @@
 using System;
 using System.Collections.Generic;
 using Leopotam.EcsLite;
-using Unity.Mathematics;
 using UnityEngine;
 
-namespace Voody.UniLeo.Light
+namespace Voody.UniLeo.Lite
 {
     /// This class handle global init to ECS World
 
@@ -91,21 +90,3 @@ namespace Voody.UniLeo.Light
         }
     }
 }
-
-#if ENABLE_IL2CPP
-// Unity IL2CPP performance optimization attribute.
-namespace Unity.IL2CPP.CompilerServices {
-    enum Option {
-        NullChecks = 1,
-        ArrayBoundsChecks = 2
-    }
-
-    [AttributeUsage (AttributeTargets.Class | AttributeTargets.Method | AttributeTargets.Property, Inherited = false, AllowMultiple = true)]
-    class Il2CppSetOptionAttribute : Attribute {
-        public Option Option { get; private set; }
-        public object Value { get; private set; }
-
-        public Il2CppSetOptionAttribute (Option option, object value) { Option = option; Value = value; }
-    }
-}
-#endif
