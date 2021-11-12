@@ -73,7 +73,8 @@ namespace Voody.UniLeo.Lite
                         GameObject.Destroy(component);
                     }
                 }
-
+		
+	            convertComponent.setProccessed();
                 switch (convertComponent.GetConvertMode())
                 {
                     case ConvertMode.ConvertAndDestroy:
