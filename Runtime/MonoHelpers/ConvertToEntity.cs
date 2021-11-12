@@ -23,7 +23,7 @@ namespace Voody.UniLeo.Lite
         private void Start()
         {
             var world = WorldHandler.GetMainWorld(); // Getting Main World from ECS
-            if (world != null && isProccessed)
+            if (world != null && !isProccessed)
             {
                 var entity = world.NewEntity();
                 var instantiatePool = world.GetPool<InstantiateComponent>();
