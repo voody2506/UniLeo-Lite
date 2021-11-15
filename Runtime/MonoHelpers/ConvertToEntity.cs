@@ -19,11 +19,11 @@ namespace Voody.UniLeo.Lite
         [SerializeField] private String customWorld; // World Type of ECS
         private EcsPackedEntity packedEntity;
         private EcsWorld spawnWorld;
-        
+        private bool isProccessed = false;
         private void Start()
         {
             var world = WorldHandler.GetMainWorld(); // Getting Main World from ECS
-            if (world != null)
+            if (world != null && !isProccessed)
             {
                 var entity = world.NewEntity();
                 var instantiatePool = world.GetPool<InstantiateComponent>();
@@ -41,6 +41,12 @@ namespace Voody.UniLeo.Lite
         public ConvertMode GetConvertMode()
         {
             return convertMode;
+        }
+
+        // After World Init system convert all components tp 
+        public void setProccessed()
+        {
+            this.isProccessed = true;
         }
         
         public int? TryGetEntity()
