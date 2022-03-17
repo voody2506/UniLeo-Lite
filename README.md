@@ -12,7 +12,7 @@ Thanks to [SinyavtsevIlya](https://github.com/SinyavtsevIlya) and [Leopotam](htt
 
 Add new line to `Packages/manifest.json`
 ```
-"com.leopotam.ecslite": "https://github.com/Leopotam/ecslite.git",
+"com.leopotam.ecslite": "https://github.com/voody2506/ecslite.git",
 ```
 **Second** install this repository
 
