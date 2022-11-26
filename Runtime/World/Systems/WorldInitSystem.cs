@@ -18,7 +18,7 @@ namespace Voody.UniLeo.Lite
         private EcsFilter _filter;
         private EcsWorld _baseWorld;
 
-        public void PreInit(EcsSystems systems)
+        public void PreInit(IEcsSystems systems)
         {
             var convertableGameObjects =
                 GameObject.FindObjectsOfType<ConvertToEntity>();
@@ -36,7 +36,7 @@ namespace Voody.UniLeo.Lite
             WorldHandler.Init(_baseWorld);
         }
 
-        public void Run(EcsSystems systems)
+        public void Run(IEcsSystems systems)
         {
             foreach (var i in _filter)
             {
@@ -50,13 +50,13 @@ namespace Voody.UniLeo.Lite
             }
         }
 
-        public void Destroy(EcsSystems systems)
+        public void Destroy(IEcsSystems systems)
         {
             WorldHandler.Destroy();
         }
 
         // Creating New Entity with components function
-        private void AddEntity(GameObject gameObject, EcsSystems systems, String worldName)
+        private void AddEntity(GameObject gameObject, IEcsSystems systems, String worldName)
         {
             var nameValue = worldName == "" ? null : worldName;
             var spawnWorld = systems.GetWorld(nameValue);
